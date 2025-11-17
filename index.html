@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fake News Detector</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="paper">
+        <h1 class="headline">📰 Vintage Fake News Detector</h1>
+        <p class="subheadline">Analyze any article with our ML-powered models</p>
+
+        <textarea id="newsInput" placeholder="Paste your news article here..."></textarea>
+
+        <button onclick="analyzeNews()">Analyze Article</button>
+
+        <div id="results" class="results hidden">
+            <h2 class="results-heading">Model Predictions</h2>
+
+            <div class="model"><strong>Naive Bayes</strong>: <span id="nb"></span></div>
+            <div class="model"><strong>Decision Tree</strong>: <span id="dt"></span></div>
+            <div class="model"><strong>Random Forest</strong>: <span id="rf"></span></div>
+            <div class="model"><strong>Gradient Boosting</strong>: <span id="gb"></span></div>
+            <div class="model"><strong>Stacking Model</strong>: <span id="stack"></span></div>
+
+            <div class="final-box">
+                FINAL VERDICT:
+                <span id="finalVerdict" class="verdict"></span>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
