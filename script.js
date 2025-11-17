@@ -6,7 +6,7 @@ async function analyzeNews() {
         return;
     }
 
-    const res = await fetch("http://127.0.0.1:5000/predict", {
+    const res = await fetch("https://fake-news-api.onrender.com/predict", {
         method: "POST",
         headers: {"Content-Type": "application/json"},
         body: JSON.stringify({ text })
@@ -33,3 +33,4 @@ async function analyzeNews() {
 
     document.getElementById("results").classList.remove("hidden");
 }
+
