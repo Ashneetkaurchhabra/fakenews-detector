@@ -42,7 +42,7 @@ fake-news-detector/
        ├── index.html
        ├── style.css
        ├── script.js
-       └── bg1.png
+       └── bg.png
 ```
 
 ✔ CSV files are **in the main root**, EXACTLY like you wanted.  
@@ -192,30 +192,122 @@ frontend/
    index.html
    style.css
    script.js
-   bg1.png
+   bg.png
 ```
 
 ### Easiest method:
 Open `index.html` in your browser.
 
-OR run a local server:
+OR Run the Frontend (Using Live Server)
 
-```bash
-cd frontend
-python -m http.server 8000
-```
-
-Open:
+Your frontend files are inside:
 
 ```
-http://localhost:8000
+frontend/
+   index.html
+   style.css
+   script.js
+   bg.png
 ```
+
+To view the website in your browser, follow these **very simple steps**:
+
+---
+
+### ✅ Step 1 — Open the Project in VS Code
+1. Open **Visual Studio Code**
+2. Click **File → Open Folder**
+3. Select your project folder:
+   ```
+   fake-news-detector/
+   ```
+
+---
+
+### ✅ Step 2 — Install the Live Server Extension
+1. Click the **Extensions** icon on the left sidebar (looks like 4 squares)
+2. In the top search bar, type:
+   ```
+   Live Server
+   ```
+3. Install the extension named **Live Server (by Ritwick Dey)**
+
+This enables one-click running of websites.
+
+---
+
+### ✅ Step 3 — Open the Frontend Folder
+In the VS Code Explorer (left side), open:
+
+```
+frontend/index.html
+```
+
+---
+
+### ✅ Step 4 — Right-Click on `index.html`
+Right-click → **Open with Live Server**
+
+OR click the **Go Live** button in the bottom-right corner of VS Code.
+
+---
+
+### ✅ Step 5 — Website Opens Automatically
+Your browser will open a link like:
+
+```
+http://127.0.0.1:5500/frontend/index.html
+```
+
+This is your **live frontend**, running locally.
+
+Every time you press **CTRL + S**, Live Server automatically refreshes the page.
+
+---
+
+### ❗ IMPORTANT: Backend Must Be Running
+Live Server only runs your **frontend**.
+
+To get predictions, the backend must also be running in another terminal:
+
+```
+python app.py
+```
+
+Backend runs on:
+
+```
+http://127.0.0.1:5000
+```
+
+Frontend (Live Server) runs on:
+
+```
+http://127.0.0.1:5500
+```
+
+Both work together normally.
+
+---
+
+### ⭐ If Live Server Does NOT Open Automatically
+Do this:
+
+1. Press **CTRL + SHIFT + P**
+2. Type:
+   ```
+   Live Server: Open with Live Server
+   ```
+3. Press Enter
+
+It will open your site.
+
+---
+
+### 🎉 Done!
+Your frontend is now running perfectly with Live Server.
+
 
 Paste your news → click **Analyze** → your backend will respond.
 
 Backend **must** be running for the frontend to work.
-
----
-
-
-alsooo lastlyyyy install all the libraries from requirements.txt
