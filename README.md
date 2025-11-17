@@ -42,7 +42,7 @@ fake-news-detector/
        ├── index.html
        ├── style.css
        ├── script.js
-       └── bg.png
+       └── bg1.png
 ```
 
 ✔ CSV files are **in the main root**, EXACTLY like you wanted.  
@@ -192,7 +192,7 @@ frontend/
    index.html
    style.css
    script.js
-   bg.png
+   bg1.png
 ```
 
 ### Easiest method:
